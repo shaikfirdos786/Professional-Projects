@@ -1,0 +1,262 @@
+/* Global styles */
+body {
+    background-color: #080202;
+    color: white;
+    font-family: 'Lora', serif;
+    cursor: none;
+}
+
+/* styles for index.html */
+.index-container{
+    margin-top: 60px;
+}
+
+.navbar .nav-link, .work-info, .message, .medium{
+    font-size: 1.7rem;
+}
+
+.navbar .nav-link, .work-info, .bi {
+    margin-right: 20px;
+    color: white;
+}
+
+.navbar .nav-link:hover,.heading:hover, .myself:hover, .skills:hover, .future-plans:hover, .languages:hover, .certificates:hover, .hobby:hover, .msg:hover, .bi:hover, .intro:hover {
+    color: red;
+}
+
+.navbar-brand{
+    margin-left: 50px;
+}
+
+.heading, .name{
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.name:hover {
+    background: linear-gradient(to right, #CD1818,
+            #F5F5F5, #9DB2BF, #213363);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.information, .intro{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.info, .about, .work-info{
+    line-height: 1.6;
+}
+
+.info, .about{
+    font-size: 1.3rem;
+}
+
+.copyright {
+    font-size: 15px;
+    color: gray;
+    position: relative;
+    bottom: 0;
+    right: 60px;
+    text-align: right;
+    width: 100%;
+}
+
+/* styles for about.html */
+.about-container{
+    max-width: 100%;
+    margin-top: 4rem;
+}
+
+.college, .github{
+    color: red;
+    text-decoration: none;
+}
+
+.college:hover, .github:hover{
+  color: blue;
+}
+
+.skills, .myself, .future-plans, .languages, .certificates, .hobby{
+    margin-top: 50px;
+}
+
+.container-row{
+    justify-content: center;
+}
+
+.top-container{
+    padding-left: 2rem;
+    margin-top: 2%;
+}
+
+.myself, .skills, .future-plans, .languages, .certificates, .hobby{
+    font-weight: bolder;
+}
+
+.future-skills, .hobbies{
+    list-style-type: circle;
+}
+
+.certificates{
+    margin-bottom: 20px;
+}
+
+li:hover{
+    color: green;
+}
+
+.carousel{
+    width: 80%;
+}
+
+
+/* styles for projects.html */
+.work-info{
+    font-family: serif;
+}
+
+hr{
+    border: 2px dashed red;
+}
+
+.project, .medium{
+    text-decoration: none;
+    color: red;
+}
+
+.project{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+.project-info{
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.project-info:hover{
+    color: #146C94;
+}
+
+
+/* styles for contact.html */
+.message{
+    font-family: serif;
+}
+
+.msg{
+    font-weight: 700;
+}
+
+
+@media (max-width: 1000px) {
+
+    .navbar-brand{
+        margin-left: 10px;
+    }
+
+    .index-container{
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0;
+        margin-top: 20%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+  .col1 {
+    width: 100%;
+    margin-bottom: 30%;
+    padding: 0;
+  }
+
+  .col2 {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20%;
+  }
+
+  .name, .heading{
+      font-size: 2rem;
+  }
+
+  .intro, .msg, .site-info{
+      font-size: 1.2rem;
+  }
+
+  .about, .subtitle, .info, .message{
+      font-size: 1rem;
+      line-height: 1.5;
+  }
+
+  .copyright{
+      text-align: center;
+      right: 0;
+      font-size: 12px;
+      margin-top: 20%
+  }
+
+  /* styles for about.html */
+  .top-container{
+      margin-top: 20%;
+  }
+
+  .about-container{
+      padding: 0;
+  }
+
+  .carousel{
+      width: 100%;
+  }
+
+  /* styles for projects.html */
+  .work-info{
+      font-size: .9rem;
+  }
+
+  /* styles for contact.html */
+  .medium, .project{
+      font-size: 1.5rem;
+  }
+
+  /* style for about.html and projects.html */
+  .column{
+    width: 80%;
+  }
+
+  .cursor{
+    display: none;
+  }
+
+}
+
+
+
+/* styles for cursor */
+.cursor{
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  z-index: -1;
+}
+
+
+.link-grow{
+  transform: scale(2);
+  background: white;
+}
+
+.link-grow1{
+  transform: scale(2);
+  background: red;
+}
